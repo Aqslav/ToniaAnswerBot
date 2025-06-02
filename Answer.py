@@ -1,6 +1,7 @@
 import requests
 from telegram import Update
 from telegram.ext import Application, MessageHandler, filters, ContextTypes
+import os
 
 TELEGRAM_BOT_TOKEN = os.environ['TELEGRAM_BOT_TOKEN']
 OPENROUTER_API_KEY = os.environ['OPENROUTER_API_KEY']

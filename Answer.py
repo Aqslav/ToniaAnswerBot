@@ -2,8 +2,9 @@ import requests
 from telegram import Update
 from telegram.ext import Application, MessageHandler, filters, ContextTypes
 
-TELEGRAM_BOT_TOKEN = '7003665664:AAFv8yIAE6S3SJMiROXhhkbbLk-NDEdMj7I'
-OPENROUTER_API_KEY = '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'
+TELEGRAM_BOT_TOKEN = os.environ['TELEGRAM_BOT_TOKEN']
+OPENROUTER_API_KEY = os.environ['OPENROUTER_API_KEY']
+
 BOT_USERNAME = '@ToniaAnswerBot'
 
 OPENROUTER_API_URL = 'https://openrouter.ai/api/v1/chat/completions'
